@@ -1,6 +1,6 @@
 FROM stockflare/base
 
-LABEL ambassadr.services.sector=env:PORT
+LABEL ambassadr.services.news.test=env:PORT
 
 LABEL ambassadr.host=env:HOST_IP
 

@@ -23,7 +23,12 @@ class TagController < Grape::API
     get do
       prefix = (params[:page] - 1) * params[:per_page]
       suffix = prefix + params[:per_page]
-      paginate orm.relation(:posts).as(:post).by_tag(params[:tag]).to_a[prefix...suffix]
+      tags = orm.relation(:posts).as(:post).by_tag(params[:tag]).to_a[prefix...suffix]
+      if tags.to_a.count > 0
+        paginate tags
+      else
+        error! 'Not Found', 404
+      end
     end
   end
 
