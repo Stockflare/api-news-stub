@@ -1,0 +1,10 @@
+stockflare:
+  build: .
+  command: puma
+  environment:
+    PORT: 2345
+    RACK_ENV: development
+  ports:
+    - "2345:2345"
+  volumes:
+    - .:/stockflare
