@@ -3,8 +3,6 @@ source 'http://rubygems.org'
 group :default do
   gem 'activesupport', '~> 4.2.0'
 
-  gem 'ambassadr', github: 'stockflare/ambassadr', tag: '0.3.3'
-
   gem 'dotenv', '~> 2.0.1'
 
   gem 'grape', '~> 0.10.1'
