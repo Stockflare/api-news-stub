@@ -1,0 +1,9 @@
+parameters:
+
+  ServiceName: news
+
+  ServicePort: '2345'
+
+  ServiceImage: stockflare/api-news-posts-stub
+
+  ServiceVersion: latest

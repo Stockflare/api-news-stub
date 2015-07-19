@@ -1,3 +1,3 @@
-FROM stockflare/shotgun
+FROM stockflare/base
 
 CMD ["puma"]

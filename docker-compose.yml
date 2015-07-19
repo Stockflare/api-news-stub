@@ -1,6 +1,6 @@
 stockflare:
   build: .
-  command: puma
+  command: broadcast puma
   environment:
     PORT: 2345
     RACK_ENV: development
